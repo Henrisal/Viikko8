@@ -1,5 +1,5 @@
 package com.example.viikko8;
-
+//GPT helped with String.ValueOf()
 import      android.os.Bundle;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,27 +29,27 @@ public class MainActivity extends AppCompatActivity {
         int number1 = Integer.parseInt(numberInput.getText().toString());
         int number2 = Integer.parseInt(numberInput2.getText().toString());
         int result = number1+number2;
-        numberOutput.setText(result);
+        numberOutput.setText(String.valueOf(result));
     }
 
     public void Minus(View view){
         int number1 = Integer.parseInt(numberInput.getText().toString());
         int number2 = Integer.parseInt(numberInput2.getText().toString());
         int result = number1-number2;
-        numberOutput.setText(result);
+        numberOutput.setText(String.valueOf(result));
     }
 
     public void Multiply(View view){
         int number1 = Integer.parseInt(numberInput.getText().toString());
         int number2 = Integer.parseInt(numberInput2.getText().toString());
         int result = number1*number2;
-        numberOutput.setText(result);
+        numberOutput.setText(String.valueOf(result));
     }
 
     public void Divide(View view){
         int number1 = Integer.parseInt(numberInput.getText().toString());
         int number2 = Integer.parseInt(numberInput2.getText().toString());
         int result = number1/number2;
-        numberOutput.setText(result);
+        numberOutput.setText(String.valueOf(result));
     }
 }
