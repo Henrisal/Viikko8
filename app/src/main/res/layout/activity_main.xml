@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editFirstNumber" />
 
     <Button
-        android:id="@+id/divideButton"
+        android:id="@+id/plusButton"
         android:layout_width="68dp"
         android:layout_height="59dp"
         android:layout_marginStart="32dp"
@@ -38,39 +38,6 @@
         android:onClick="Plus"
         android:text="+"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
-
-    <Button
-        android:id="@+id/divideButton"
-        android:layout_width="68dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="24dp"
-        android:onClick="Minus"
-        android:text="-"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
-
-    <Button
-        android:id="@+id/divideButton"
-        android:layout_width="68dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:onClick="Multiply"
-        android:text="x"
-        app:layout_constraintEnd_toStartOf="@+id/divideButton"
-        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
-
-    <Button
-        android:id="@+id/divideButton"
-        android:layout_width="68dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:onClick="Divide"
-        android:text="/"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
 
     <EditText
@@ -85,5 +52,35 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="73dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/multiplyButton"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="X"
+        app:layout_constraintEnd_toStartOf="@+id/divideButton"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
