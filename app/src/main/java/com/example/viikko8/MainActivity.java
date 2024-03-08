@@ -1,14 +1,10 @@
 package com.example.viikko8;
 
-import android.os.Bundle;
+import      android.os.Bundle;
 import android.widget.EditText;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
-import java.sql.SQLOutput;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         numberInput = findViewById(R.id.editFirstNumber);
