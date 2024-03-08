@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         numberOutput = findViewById(R.id.textSeeResult);
 
 
+
         }
 
     public void Plus(View view){
